@@ -8,6 +8,7 @@
  */
 
 // Your code :
+let escapeStr = 'salut les \' \" \` / \\'
 
 //* Begin of tests
 const assert = require('assert')
