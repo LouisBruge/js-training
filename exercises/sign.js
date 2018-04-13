@@ -11,6 +11,17 @@
  */
 
 // Your code :
+let sign = (n) => {
+  if (n > 0) {
+    return 1
+  } else if (n < 0) {
+    return -1
+  } else if (n === 0) {
+    return n
+  } else {
+    console.log(`${n} is not a number`)
+  }
+}
 
 //* Begin of tests
 const assert = require('assert')
