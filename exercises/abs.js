@@ -10,6 +10,7 @@
  */
 
 // Your code :
+let abs = (n) => { return Math.abs(n) }
 
 //* Begin of tests
 const assert = require('assert')
