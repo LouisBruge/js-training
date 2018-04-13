@@ -5,6 +5,7 @@
  *
  * @notions Primitive and Operators, Functions
  */
+let add = (numberOne, numberTwo) => { return numberOne + numberTwo }
 
 // Your code :
 
