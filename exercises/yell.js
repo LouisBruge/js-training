@@ -6,9 +6,12 @@
  *
  */
 
+let yell = (n) => { return n.toUpperCase() }
 
 //* Begin of tests
 const assert = require('assert')
 
-assert.fail('You must write your own tests')
+assert.strictEqual(typeof yell, 'function')
+assert.strictEqual(yell('louis'), 'LOUIS')
+assert.strictEqual(yell('salut les geeks'), 'SALUT LES GEEKS')
 // End of tests */
