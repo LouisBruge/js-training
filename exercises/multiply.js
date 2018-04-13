@@ -9,6 +9,22 @@
  */
 
 // Your code :
+let multiply = (a, b) => {
+  let result = 0
+  let i = 0
+  while (i < Math.abs(b)) {
+    result += a
+    i++
+  }
+
+  result = Math.abs(result)
+
+  if ((a < 0 && b > 0) || (a > 0 && b < 0)) {
+    return -result
+  } else {
+    return result
+  }
+}
 
 //* Begin of tests
 const assert = require('assert')
