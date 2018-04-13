@@ -6,6 +6,7 @@
  *
  * @notions Data-Structures, Get
  */
+let getLast = (array) => { return array[ array.length - 1 ] }
 
 // Your code :
 
