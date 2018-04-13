@@ -8,6 +8,7 @@
  */
 
 // Your code :
+let getLength = (n) => { return n.length }
 
 //* Begin of tests
 const assert = require('assert')
