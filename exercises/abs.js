@@ -10,7 +10,7 @@
  */
 
 // Your code :
-let abs = (n) => { return Math.abs(n) }
+let abs = (n) => { return (n >= 0 ? n : -n) }
 
 //* Begin of tests
 const assert = require('assert')
