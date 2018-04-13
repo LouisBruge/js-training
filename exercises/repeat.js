@@ -8,6 +8,14 @@
  *
  */
 
+let repeat = (string, number) => {
+  let newSentence = ''
+  for (let i = 0; i < number; i++) {
+    newSentence += string
+  }
+  return newSentence
+}
+
 //* Begin of tests
 const assert = require('assert')
 
