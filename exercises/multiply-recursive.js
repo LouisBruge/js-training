@@ -10,6 +10,28 @@
  */
 
 // Your code :
+let multiply = (a, b, counter = 0, result = null) => {
+  if (a === 0 || b === 0) {
+    return 0
+  }
+
+  if (result === null) {
+    result = a
+  }
+
+  if (counter < Math.abs(b) - 1) {
+    counter++
+    result += a
+    result = multiply(a, b, counter, result)
+  }
+
+  if (Math.sign(a) !== Math.sign(b)) {
+    result = Math.abs(result)
+    return -result
+  } else {
+    return Math.abs(result)
+  }
+}
 
 //* Begin of tests
 const assert = require('assert')
