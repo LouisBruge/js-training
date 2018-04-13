@@ -10,6 +10,7 @@
  */
 
 // Your code :
+let max = (numberOne, numberTwo) => { return (numberOne > numberTwo ? numberOne : numberTwo) }
 
 //* Begin of tests
 const assert = require('assert')
