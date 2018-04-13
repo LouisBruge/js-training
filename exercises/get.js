@@ -12,10 +12,11 @@ const sourceObject = {
   num: 42,
   bool: true,
   str: 'some text',
-  log: console.log,
+  log: console.log
 }
 
 // Your code :
+let get = (n) => { return sourceObject[n] }
 
 //* Begin of tests
 const assert = require('assert')
