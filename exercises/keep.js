@@ -12,9 +12,28 @@
  *
  */
 
+let keepFirst = (n) => {
+  return n.slice(0, 2)
+}
+
+let keepLast = (n) => {
+  return n.slice(n.length - 2, n.lenght)
+}
+
+let keepFirstLast = (n) => {
+  return (n.length > 5 ? n.slice(3, 5) : 'Erreur, mot pas assez long')
+}
 
 //* Begin of tests
 const assert = require('assert')
 
-assert.fail('You must write your own tests')
+assert.strictEqual(typeof keepFirst, 'function')
+assert.strictEqual(typeof keepLast, 'function')
+assert.strictEqual(typeof keepFirstLast, 'function')
+assert.strictEqual(keepFirst('Hello world'), 'He')
+assert.strictEqual(keepLast('Hello world'), 'ld')
+assert.strictEqual(keepFirstLast('Hello world'), 'lo')
+assert.strictEqual(keepFirstLast('Lorem ipsum'), 'em')
+assert.strictEqual(keepFirstLast('Lore'), 'Erreur, mot pas assez long')
+
 // End of tests */

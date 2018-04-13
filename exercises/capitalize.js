@@ -7,11 +7,20 @@
  *
  */
 
+let capitalize = (n) => {
+  n = n.toLowerCase()
+  let firstLetter = n[0]
+  let newSentence = firstLetter.toUpperCase()
+
+  newSentence += n.slice(1, n.length)
+
+  return newSentence
+}
 
 //* Begin of tests
 const assert = require('assert')
 
-assert.strictEqual(typeof capitalize, "function")
+assert.strictEqual(typeof capitalize, 'function')
 assert.strictEqual(capitalize('str'), 'Str')
 assert.strictEqual(capitalize('qsdqsdqsd'), 'Qsdqsdqsd')
 assert.strictEqual(capitalize('STR'), 'Str')
